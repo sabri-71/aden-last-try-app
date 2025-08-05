@@ -3,7 +3,7 @@
   "appName": "اسعار الصرف اليمن",
   "webDir": "dist",
   "server": {
-    "url": "https://eba60485-e67c-44be-9844-41260bc973ea.lovableproject.com?forceHideBadge=true",
+    "url": "https://aden-last-try-app-3.onrender.com",
     "cleartext": true
   },
   "plugins": {
