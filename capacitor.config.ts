@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   appName: 'اسعار الصرف اليمن',
   webDir: 'dist',
   server: {
-    url: 'https://eba60485-e67c-44be-9844-41260bc973ea.lovableproject.com?forceHideBadge=true',
+    url: 'http://10.0.2.2:8081',
     cleartext: true
   },
   plugins: {
@@ -34,7 +34,6 @@ const config: CapacitorConfig = {
     },
     AdMob: {
       appId: 'ca-app-pub-3940256099942544~3347511713', // معرف اختبار - يجب استبداله بمعرفك الحقيقي
-      testingDevices: ['YOUR_DEVICE_ID_HERE']
     }
   },
   android: {
