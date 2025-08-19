@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   appName: 'اسعار الصرف اليمن',
   webDir: 'dist',
   server: {
-    url: 'https://app-sabri.onrender.com',
+  url: 'http://10.0.2.2:3000', // عنوان خاص بمحاكي Android Studio
     cleartext: true
   },
   plugins: {
