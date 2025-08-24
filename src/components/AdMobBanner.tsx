@@ -35,7 +35,7 @@ const AdMobBanner: React.FC<AdMobBannerProps> = ({
 
         // إعداد البانر
         const options: BannerAdOptions = {
-          adId: adId || 'ca-app-pub-3940256099942544/6300978111', // معرف إختبار من Google
+          adId: adId || 'ca-app-pub-7990450110814740/1289194571', // معرف إختبار من Google
           adSize: size,
           position: position,
           margin: 0,

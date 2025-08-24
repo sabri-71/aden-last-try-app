@@ -27,8 +27,8 @@ const Index = () => {
     return city;
   };
   return <div className="min-h-screen bg-gradient-to-br from-amber-900 via-yellow-900 to-amber-800 py-0 relative text-[12px] md:text-[15px]">
-      {/* App Open Ad Component */}
-      <AdMobAppOpen />
+  {/* App Open Ad Component */}
+  <AdMobAppOpen adId="ca-app-pub-7990450110814740/3998012142" />
       
       {/* Background Logo */}
       <div className="fixed bottom-4 left-4 z-0 opacity-20">
