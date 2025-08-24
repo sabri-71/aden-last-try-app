@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   appName: 'اسعار الصرف اليمن',
   webDir: 'dist',
   server: {
-  url: 'http://10.0.2.2:3000', // عنوان خاص بمحاكي Android Studio
+  url: 'https://aden-last-try-app-3.onrender.com', // عنوان خاص بمحاكي Android Studio
     cleartext: true
   },
   plugins: {
@@ -33,7 +33,7 @@ const config: CapacitorConfig = {
       resizeOnFullScreen: true
     },
     AdMob: {
-      appId: 'ca-app-pub-3940256099942544~3347511713', // معرف اختبار - يجب استبداله بمعرفك الحقيقي
+  appId: 'ca-app-pub-7990450110814740~3959304534', // معرف إنتاج AdMob
     }
   },
   android: {
