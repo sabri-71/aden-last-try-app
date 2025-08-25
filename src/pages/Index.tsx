@@ -34,8 +34,8 @@ const Index = () => {
       </div>
 
       {/* Header */}
-        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-0.5 md:p-1 shadow-2xl relative z-10 my-0 mx-[1px] px-2 py-0 min-h-[8px]">
-          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-0.5 rounded-full p-0.5 bg-[#eac30d]/90 min-h-[8px]">
+  <div className="header bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-0.5 md:p-1 shadow-2xl relative z-10 my-0 mx-[1px] px-2 py-0 min-h-[1px]">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-0.5 rounded-full p-0.5 bg-[#eac30d]/90 min-h-[1px]">
             <div className="flex items-center gap-0.5">
               <div className="w-3 h-3 md:w-4 md:h-4 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-2xl">
                 <span className="text-white font-bold text-[8px] md:text-[10px]">₹</span>

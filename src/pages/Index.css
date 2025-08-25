@@ -1,6 +1,6 @@
 
-.header {
-  height: 6vh !important; /* تصغير الهيدر */
+ .header {
+  height: 3.2vh !important; /* تصغير الهيدر أكثر ليصل إلى النقطة المطلوبة */
   /* ...existing code... */
 }
 
