@@ -1,4 +1,3 @@
-
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
@@ -56,7 +55,8 @@ const config: CapacitorConfig = {
     backgroundColor: '#8B4513',
     scrollEnabled: true,
     swipeGesture: true,
-    contentInset: 'automatic'
+    contentInset: 'automatic',
+    headerHeight: '20%' // إضافة متغير مخصص للـ header
   }
 };
 
