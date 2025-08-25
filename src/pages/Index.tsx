@@ -34,29 +34,28 @@ const Index = () => {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-0.5 md:p-1 shadow-2xl relative z-10 my-0 mx-[1px] px-2 py-0 min-h-[14px]">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 rounded-full p-0.5 bg-[#eac30d]/90 min-h-[14px]">
-          <div className="flex items-center gap-1">
-            <div className="w-4 h-4 md:w-5 md:h-5 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-2xl">
-              <span className="text-white font-bold text-[10px] md:text-xs">₹</span>
+        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-0.5 md:p-1 shadow-2xl relative z-10 my-0 mx-[1px] px-2 py-0 min-h-[8px]">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-0.5 rounded-full p-0.5 bg-[#eac30d]/90 min-h-[8px]">
+            <div className="flex items-center gap-0.5">
+              <div className="w-3 h-3 md:w-4 md:h-4 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-2xl">
+                <span className="text-white font-bold text-[8px] md:text-[10px]">₹</span>
+              </div>
+              <div className="text-white text-center sm:text-right">
+                <h1 className="text-[8px] md:text-[10px] font-bold tracking-wide">
+                  {t('appTitle', language)}
+                </h1>
+                <p className="text-[6px] md:text-[8px] opacity-90">
+                  {t('liveUpdate', language)} • {new Date().toLocaleDateString('en-US')}
+                </p>
+              </div>
             </div>
-            <div className="text-white text-center sm:text-right">
-              <h1 className="text-[10px] md:text-xs font-bold tracking-wide">
-                {t('appTitle', language)}
-              </h1>
-              <p className="text-[7px] md:text-[10px] opacity-90">
-                {t('liveUpdate', language)} • {new Date().toLocaleDateString('en-US')}
-              </p>
+            <div className="flex gap-0.5 md:gap-1 items-center flex-wrap justify-center">
+              <LanguageToggle language={language} onLanguageChange={changeLanguage} />
+              {/* <SarUpdateButton /> */}
+              {/* <GoldUpdateButton /> */}
             </div>
-          </div>
-          
-          <div className="flex gap-1 md:gap-2 items-center flex-wrap justify-center">
-            <LanguageToggle language={language} onLanguageChange={changeLanguage} />
-            {/* <SarUpdateButton /> */}
-            {/* <GoldUpdateButton /> */}
           </div>
         </div>
-      </div>
 
       {/* إعلان بانر في بداية الشاشة */}
       <div className="max-w-7xl mx-auto px-2 py-2">

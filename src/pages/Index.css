@@ -1,8 +1,7 @@
-```css
+
 .header {
-  height: 10vh !important; /* أضف !important لضمان تطبيق الستايل */
+  height: 6vh !important; /* تصغير الهيدر */
   /* ...existing code... */
 }
 
 /* احذف أو عدل أي كلاس متعلق بأزرار تحديث الذهب و تحديث SAR */
-```
