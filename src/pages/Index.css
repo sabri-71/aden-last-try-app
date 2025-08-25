@@ -1,0 +1,8 @@
+```css
+.header {
+  height: 10vh !important; /* أضف !important لضمان تطبيق الستايل */
+  /* ...existing code... */
+}
+
+/* احذف أو عدل أي كلاس متعلق بأزرار تحديث الذهب و تحديث SAR */
+```
