@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import CurrencyTabs from '@/components/CurrencyTabs';
-import SarUpdateButton from '@/components/SarUpdateButton';
-import GoldUpdateButton from '@/components/GoldUpdateButton';
 import LanguageToggle from '@/components/LanguageToggle';
 import AdMobBanner from '@/components/AdMobBanner';
 import AdMobAppOpen from '@/components/AdMobAppOpen';
@@ -36,7 +34,7 @@ const Index = () => {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-0.5 md:p-1 shadow-2xl relative z-10 my-0 mx-[1px] px-2 py-0 min-h-[14px]">
+      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-0.5 md:p-1 shadow-2xl relative z-10 my-0 mx-[1px] px-2 py-0 min-h-[14px] header" style={{ height: "20vh" }}>
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 rounded-full p-0.5 bg-[#eac30d]/90 min-h-[14px]">
           <div className="flex items-center gap-1">
             <div className="w-4 h-4 md:w-5 md:h-5 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-2xl">
