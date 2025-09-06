@@ -3,12 +3,15 @@ import CurrencyTabs from '@/components/CurrencyTabs';
 import LanguageToggle from '@/components/LanguageToggle';
 import AdMobBanner from '@/components/AdMobBanner';
 import AdMobAppOpen from '@/components/AdMobAppOpen';
+import AdMobInterstitial from '@/components/AdMobInterstitial';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/hooks/useLanguage';
 import { t } from '@/utils/translations';
 import { BannerAdPosition, BannerAdSize } from '@capacitor-community/admob';
 const Index = () => {
   const [selectedCity, setSelectedCity] = useState('عدن');
+  const [showInterstitial, setShowInterstitial] = useState(false);
+  const [refreshCount, setRefreshCount] = useState(0);
   const {
     language,
     changeLanguage
@@ -24,9 +27,17 @@ const Index = () => {
     }
     return city;
   };
+  // مثال: عرض إعلان Interstitial كل 3 تحديثات
+  useEffect(() => {
+    if (refreshCount > 0 && refreshCount % 3 === 0) {
+      setShowInterstitial(true);
+      setTimeout(() => setShowInterstitial(false), 3000); // إخفاء بعد 3 ثواني
+    }
+  }, [refreshCount]);
   return <div className="min-h-screen bg-gradient-to-br from-amber-900 via-yellow-900 to-amber-800 py-0 relative text-[12px] md:text-[15px]">
   {/* App Open Ad Component */}
   <AdMobAppOpen adId="ca-app-pub-7990450110814740/3998012142" />
+  <AdMobInterstitial adId="ca-app-pub-7990450110814740/9213240137" show={showInterstitial} />
       
       {/* Background Logo */}
       <div className="fixed bottom-4 left-4 z-0 opacity-20">
