@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { AdMob, InterstitialAdOptions } from '@capacitor-community/admob';
+import { AdMob } from '@capacitor-community/admob';
 import { Capacitor } from '@capacitor/core';
 
 interface AdMobInterstitialProps {
@@ -14,11 +14,11 @@ const AdMobInterstitial: React.FC<AdMobInterstitialProps> = ({ adId, show, onClo
     const showAd = async () => {
       try {
         await AdMob.initialize();
-        const options: InterstitialAdOptions = {
-          adId: adId || 'ca-app-pub-7990450110814740/4668240145', // معرف اختبار رسمي من Google
+        await AdMob.prepareInterstitial({
+          adId: adId || 'ca-app-pub-3940256099942544/1033173712', // معرف اختبار رسمي من Google
           isTesting: true // اجعلها false عند الإنتاج
-        };
-        await AdMob.showInterstitial(options);
+        });
+        await AdMob.showInterstitial();
         if (onClose) onClose();
       } catch (err) {
         console.error('خطأ في عرض إعلان Interstitial:', err);

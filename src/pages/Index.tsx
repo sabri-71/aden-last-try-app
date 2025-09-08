@@ -27,17 +27,17 @@ const Index = () => {
     }
     return city;
   };
-  // مثال: عرض إعلان Interstitial كل 3 تحديثات
+  // عرض إعلان Interstitial كل تحديث، فقط إذا كانت المدينة المختارة "صنعاء"
   useEffect(() => {
-    if (refreshCount > 0 && refreshCount % 3 === 0) {
+    if (refreshCount > 0 && selectedCity === 'صنعاء') {
       setShowInterstitial(true);
       setTimeout(() => setShowInterstitial(false), 3000); // إخفاء بعد 3 ثواني
     }
-  }, [refreshCount]);
+  }, [refreshCount, selectedCity]);
   return <div className="min-h-screen bg-gradient-to-br from-amber-900 via-yellow-900 to-amber-800 py-0 relative text-[12px] md:text-[15px]">
   {/* App Open Ad Component */}
   <AdMobAppOpen adId="ca-app-pub-7990450110814740/3998012142" />
-  <AdMobInterstitial adId="ca-app-pub-7990450110814740/9213240137" show={showInterstitial} />
+  <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showInterstitial} />
       
       {/* Background Logo */}
       <div className="fixed bottom-4 left-4 z-0 opacity-20">
