@@ -1,15 +1,14 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { AdMob } from '@capacitor-community/admob';
 import { Capacitor } from '@capacitor/core';
 
-interface AdMobInterstitialProps {
+interface AdMobRewardedProps {
   adId?: string;
   show?: boolean;
   onClose?: () => void;
 }
 
-const AdMobInterstitial: React.FC<AdMobInterstitialProps> = ({ adId, show, onClose }) => {
+const AdMobRewarded: React.FC<AdMobRewardedProps> = ({ adId, show, onClose }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const hasShownRef = useRef(false);
 
@@ -19,16 +18,16 @@ const AdMobInterstitial: React.FC<AdMobInterstitialProps> = ({ adId, show, onClo
     const loadAd = async () => {
       try {
         await AdMob.initialize();
-        await AdMob.prepareInterstitial({
-          adId: adId || 'ca-app-pub-3940256099942544/1033173712',
+        await AdMob.prepareRewardVideoAd({
+          adId: adId || 'ca-app-pub-3940256099942544/5224354917', // معرف اختبار مكافأة
           isTesting: true
         });
         if (isMounted) {
           setIsLoaded(true);
-          console.log('✅ تم تحميل الإعلان البيني بنجاح');
+          console.log('✅ تم تحميل إعلان المكافأة بنجاح');
         }
       } catch (err) {
-        console.error('❌ فشل تحميل الإعلان البيني:', err);
+        console.error('❌ فشل تحميل إعلان المكافأة:', err);
         setIsLoaded(false);
       }
     };
@@ -41,11 +40,11 @@ const AdMobInterstitial: React.FC<AdMobInterstitialProps> = ({ adId, show, onClo
       hasShownRef.current = true;
       const showAd = async () => {
         try {
-          await AdMob.showInterstitial();
-          console.log('✅ تم عرض الإعلان البيني');
+          await AdMob.showRewardVideoAd();
+          console.log('✅ تم عرض إعلان المكافأة');
           if (onClose) onClose();
         } catch (err) {
-          console.error('❌ خطأ في عرض إعلان Interstitial:', err);
+          console.error('❌ خطأ في عرض إعلان المكافأة:', err);
           if (onClose) onClose();
         }
       };
@@ -60,4 +59,4 @@ const AdMobInterstitial: React.FC<AdMobInterstitialProps> = ({ adId, show, onClo
   return null;
 };
 
-export default AdMobInterstitial;
+export default AdMobRewarded;
