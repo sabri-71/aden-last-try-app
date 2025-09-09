@@ -37,7 +37,7 @@ const Index = () => {
   return <div className="min-h-screen bg-gradient-to-br from-amber-900 via-yellow-900 to-amber-800 py-0 relative text-[12px] md:text-[15px]">
   {/* App Open Ad Component */}
   <AdMobAppOpen adId="ca-app-pub-7990450110814740/3998012142" />
-  <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showInterstitial} />
+  <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showInterstitial} onClose={() => setShowInterstitial(false)} />
       
       {/* Background Logo */}
       <div className="fixed bottom-4 left-4 z-0 opacity-20">
@@ -52,7 +52,7 @@ const Index = () => {
               <span className="text-white font-bold text-[10px] md:text-xs">₹</span>
             </div>
             <div className="text-white text-center sm:text-right">
-              <h1 className="text-[10px] md:text-xs font-bold tracking-wide">
+              <h1 className="text-[20px] md:text-3xl font-bold tracking-wide" style={{fontSize: '200%'}}>
                 {t('appTitle', language)}
               </h1>
               <p className="text-[7px] md:text-[10px] opacity-90">

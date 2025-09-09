@@ -9,6 +9,8 @@ import SanaaCurrencyCards from './SanaaCurrencyCards';
 import CurrencyConverter from './CurrencyConverter';
 import ManualRefreshButton from './ManualRefreshButton';
 import { t } from '@/utils/translations';
+import AdMobInterstitial from './AdMobInterstitial';
+import AdMobRewarded from './AdMobRewarded';
 interface CurrencyTabsProps {
   selectedCity: string;
   language: 'ar' | 'en';
@@ -18,6 +20,8 @@ const CurrencyTabs = ({
   language
 }: CurrencyTabsProps) => {
   const [activeTab, setActiveTab] = React.useState('currencies');
+  const [showGoldInterstitial, setShowGoldInterstitial] = React.useState(false);
+  const [showRewarded, setShowRewarded] = React.useState(false);
   const {
     data: exchangeRates,
     isLoading: ratesLoading,
@@ -28,6 +32,14 @@ const CurrencyTabs = ({
     isLoading: goldLoading,
     error: goldError
   } = useGoldPrices(selectedCity);
+
+  React.useEffect(() => {
+    if (activeTab === 'gold') setShowGoldInterstitial(true);
+    else setShowGoldInterstitial(false);
+    if (activeTab === 'converter') setShowRewarded(true);
+    else setShowRewarded(false);
+  }, [activeTab]);
+
   if (ratesLoading || goldLoading) {
     return <div className="flex justify-center items-center h-40">
         <div className="relative">
@@ -49,6 +61,7 @@ const CurrencyTabs = ({
     }
     return city;
   };
+
   return <div className="w-full max-w-7xl py-0 px-0 bg-[#733f27]/55 my-0 mx-0 rounded-none">
       {/* Manual Refresh Button */}
       <div className="flex justify-center mb-8">
@@ -110,7 +123,8 @@ const CurrencyTabs = ({
               </div>}
           </>}
 
-        {activeTab === 'gold' && <div>
+    {activeTab === 'gold' && <>
+      <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showGoldInterstitial} onClose={() => setShowGoldInterstitial(false)} />
             <div className="text-center mb-8">
               <div className="bg-amber-800/20 backdrop-blur-sm rounded-2xl p-6 border border-amber-600/30 shadow-xl mb-6">
                 <h2 className="text-white text-2xl md:text-3xl font-bold mb-3 flex items-center justify-center gap-3">
@@ -128,23 +142,26 @@ const CurrencyTabs = ({
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {goldPrices?.map(gold => <GoldCard key={`${gold.type}-${gold.city}`} gold={gold} language={language} />)}
             </div>
-          </div>}
+          </>}
 
-        {activeTab === 'converter' && <div>
-            <div className="text-center mb-8">
-              <div className="bg-amber-800/20 backdrop-blur-sm rounded-2xl p-6 border border-amber-600/30 shadow-xl mb-6">
-                <h2 className="text-white text-2xl md:text-3xl font-bold mb-3 flex items-center justify-center gap-3">
-                  <Calculator size={32} className="text-yellow-400" />
-                  {t('currencyConverter', language)} - {getCityName(selectedCity)}
-                </h2>
-                <div className="flex items-center justify-center gap-2 text-white/80 text-sm">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                  <span>{t('accurateConversion', language)}</span>
-                </div>
+        {activeTab === 'converter' && <>
+          <button onClick={() => setShowRewarded(true)} className="bg-blue-600 text-white px-3 py-2 rounded-lg shadow hover:bg-blue-700 transition mb-4">اختبار إعلان مكافأة</button>
+          <AdMobRewarded adId="ca-app-pub-3940256099942544/5224354917" show={showRewarded} onClose={() => setShowRewarded(false)} />
+          <div className="text-center mb-8">
+            <div className="bg-amber-800/20 backdrop-blur-sm rounded-2xl p-6 border border-amber-600/30 shadow-xl mb-6">
+              <h2 className="text-white text-2xl md:text-3xl font-bold mb-3 flex items-center justify-center gap-3">
+                <Calculator size={32} className="text-yellow-400" />
+                {t('currencyConverter', language)} - {getCityName(selectedCity)}
+              </h2>
+              <div className="flex items-center justify-center gap-2 text-white/80 text-sm">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <span>{t('accurateConversion', language)}</span>
               </div>
             </div>
-            <CurrencyConverter rates={exchangeRates || []} language={language} />
-          </div>}
+          </div>
+          <CurrencyConverter rates={exchangeRates || []} language={language} />
+        </>}
+
       </div>
 
       {/* Enhanced Update Status */}
