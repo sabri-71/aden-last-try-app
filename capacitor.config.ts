@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'اسعار الصرف اليمن',
   webDir: 'dist',
   server: {
-  url: 'https://aden-last-try-app-3.onrender.com', // عنوان خاص بمحاكي Android Studio
+    url: 'https://aden-last-try-app-3.onrender.com', // عنوان خاص بمحاكي Android Studio
     cleartext: true
   },
   plugins: {

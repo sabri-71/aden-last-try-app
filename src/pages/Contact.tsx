@@ -1,12 +1,22 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import AdMobRewarded from '@/components/AdMobRewarded';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Phone, MessageCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
+  const [showRewarded, setShowRewarded] = useState(false);
+  useEffect(() => {
+    setShowRewarded(true);
+    // إخفاء الإعلان بعد عرضه
+    const timer = setTimeout(() => setShowRewarded(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-900 via-yellow-900 to-amber-800">
+      {/* إعلان بيني مكافأة */}
+      <AdMobRewarded adId="ca-app-pub-3940256099942544/5224354917" show={showRewarded} onClose={() => setShowRewarded(false)} />
       {/* Header */}
       <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-6 shadow-2xl">
         <div className="max-w-7xl mx-auto flex justify-between items-center">

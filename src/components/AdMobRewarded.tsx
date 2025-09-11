@@ -19,8 +19,8 @@ const AdMobRewarded: React.FC<AdMobRewardedProps> = ({ adId, show, onClose }) =>
       try {
         await AdMob.initialize();
         await AdMob.prepareRewardVideoAd({
-          adId: adId || 'ca-app-pub-3940256099942544/5224354917', // معرف اختبار مكافأة
-          isTesting: true
+          adId: adId || 'ca-app-pub-7990450110814740/9802105180', // معرف مكافأة
+          isTesting: false
         });
         if (isMounted) {
           setIsLoaded(true);

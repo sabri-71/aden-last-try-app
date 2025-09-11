@@ -32,6 +32,14 @@ const CurrencyTabs = ({
     isLoading: goldLoading,
     error: goldError
   } = useGoldPrices(selectedCity);
+
+  React.useEffect(() => {
+    if (activeTab === 'gold') setShowGoldInterstitial(true);
+    else setShowGoldInterstitial(false);
+    if (activeTab === 'converter') setShowRewarded(true);
+    else setShowRewarded(false);
+  }, [activeTab]);
+
   if (ratesLoading || goldLoading) {
     return <div className="flex justify-center items-center h-40">
         <div className="relative">
@@ -53,12 +61,7 @@ const CurrencyTabs = ({
     }
     return city;
   };
-  React.useEffect(() => {
-    if (activeTab === 'gold') setShowGoldInterstitial(true);
-    else setShowGoldInterstitial(false);
-    if (activeTab === 'converter') setShowRewarded(true);
-    else setShowRewarded(false);
-  }, [activeTab]);
+
   return <div className="w-full max-w-7xl py-0 px-0 bg-[#733f27]/55 my-0 mx-0 rounded-none">
       {/* Manual Refresh Button */}
       <div className="flex justify-center mb-8">
@@ -120,9 +123,8 @@ const CurrencyTabs = ({
               </div>}
           </>}
 
-        {activeTab === 'gold' && <>
-            <button onClick={() => setShowGoldInterstitial(true)} className="bg-yellow-600 text-white px-3 py-2 rounded-lg shadow hover:bg-yellow-700 transition mb-4">اختبار إعلان بيني</button>
-            <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showGoldInterstitial} onClose={() => setShowGoldInterstitial(false)} />
+    {activeTab === 'gold' && <>
+      <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showGoldInterstitial} onClose={() => setShowGoldInterstitial(false)} />
             <div className="text-center mb-8">
               <div className="bg-amber-800/20 backdrop-blur-sm rounded-2xl p-6 border border-amber-600/30 shadow-xl mb-6">
                 <h2 className="text-white text-2xl md:text-3xl font-bold mb-3 flex items-center justify-center gap-3">
