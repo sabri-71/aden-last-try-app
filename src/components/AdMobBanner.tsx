@@ -39,7 +39,7 @@ const AdMobBanner: React.FC<AdMobBannerProps> = ({
           adSize: size,
           position: position,
           margin: 0,
-          isTesting: true // اتركه true للاختبار
+          isTesting: false // إعلان حقيقي
         };
 
         // عرض البانر
