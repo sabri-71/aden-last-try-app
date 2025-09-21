@@ -124,7 +124,8 @@ const CurrencyTabs = ({
           </>}
 
     {activeTab === 'gold' && <>
-      <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={showGoldInterstitial} onClose={() => setShowGoldInterstitial(false)} />
+      {/* إعلان بيني عدني يعمل تلقائياً بدون زر */}
+      <AdMobInterstitial adId="ca-app-pub-3940256099942544/1033173712" show={true} onClose={() => {}} />
             <div className="text-center mb-8">
               <div className="bg-amber-800/20 backdrop-blur-sm rounded-2xl p-6 border border-amber-600/30 shadow-xl mb-6">
                 <h2 className="text-white text-2xl md:text-3xl font-bold mb-3 flex items-center justify-center gap-3">
@@ -145,8 +146,8 @@ const CurrencyTabs = ({
           </>}
 
         {activeTab === 'converter' && <>
-          <button onClick={() => setShowRewarded(true)} className="bg-blue-600 text-white px-3 py-2 rounded-lg shadow hover:bg-blue-700 transition mb-4">اختبار إعلان مكافأة</button>
-          <AdMobRewarded adId="ca-app-pub-3940256099942544/5224354917" show={showRewarded} onClose={() => setShowRewarded(false)} />
+          {/* إعلان المكافأة يظهر تلقائياً عند فتح التبويب */}
+          <AdMobRewarded adId="ca-app-pub-3940256099942544/5224354917" show={true} onClose={() => {}} />
           <div className="text-center mb-8">
             <div className="bg-amber-800/20 backdrop-blur-sm rounded-2xl p-6 border border-amber-600/30 shadow-xl mb-6">
               <h2 className="text-white text-2xl md:text-3xl font-bold mb-3 flex items-center justify-center gap-3">
