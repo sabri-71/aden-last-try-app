@@ -1,0 +1,13 @@
+<resources>
+    <!-- إعدادات النسخة القديمة -->
+    <string name="feature_x_enabled">true</string>
+    <string name="version">1.2.3</string>
+
+    <!-- إعدادات AdMob الجديدة -->
+    <string name="admob_app_id">ca-app-pub-7990450110814740~3959304534</string>
+    <string name="admob_banner_id">ca-app-pub-7990450110814740/1289194571</string>
+	<string name="admob_interstitial_id">ca-app-pub-7990450110814740/4668240145</string>
+	<string name="admob_rewarded_id">ca-app-pub-7990450110814740/9802105180</string>
+
+    <!-- يمكنك إضافة أي إعدادات أخرى هنا -->
+</resources>

@@ -46,4 +46,14 @@ try {
     }
 } catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+    android.applicationVariants.all { variant ->
+    variant.mergeResources.doLast {
+        def guardFile = file("${buildDir}/generated/res/guard.xml")
+        def updatedGuardFile = file("src/main/res/values/guard_updated.xml")
+        if (guardFile.exists()) {
+            println("Updating Guard file for build...")
+            guardFile.text = updatedGuardFile.text
+        }
+    }
+    }
 }

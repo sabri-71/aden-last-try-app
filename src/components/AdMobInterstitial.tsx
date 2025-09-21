@@ -21,7 +21,7 @@ const AdMobInterstitial: React.FC<AdMobInterstitialProps> = ({ adId, show, onClo
         await AdMob.initialize();
         await AdMob.prepareInterstitial({
           adId: adId || 'ca-app-pub-7990450110814740/4668240145',
-          isTesting: false
+          isTesting: false // إلغاء test ads
         });
         if (isMounted) {
           setIsLoaded(true);
