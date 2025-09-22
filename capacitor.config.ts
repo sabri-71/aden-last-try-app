@@ -4,10 +4,10 @@ const config: CapacitorConfig = {
   appId: 'com.adenrates.currencyapp',
   appName: 'اسعار الصرف اليمن',
   webDir: 'dist',
-  server: {
-    url: 'https://aden-last-try-app-3.onrender.com', // عنوان خاص بمحاكي Android Studio
-    cleartext: true
-  },
+  // server: {
+  //   url: 'https://aden-last-try-app-3.onrender.com', // عنوان خاص بمحاكي Android Studio
+  //   cleartext: true
+  // },
   plugins: {
     SplashScreen: {
       launchShowDuration: 3000,

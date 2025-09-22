@@ -30,7 +30,7 @@ const AdMobBanner: React.FC<AdMobBannerProps> = ({
         // تهيئة AdMob
         await AdMob.initialize({
           testingDevices: ['YOUR_DEVICE_ID'], // أضف معرف جهازك للاختبار
-          initializeForTesting: true
+          initializeForTesting: false
         });
 
         // إعداد البانر
