@@ -35,11 +35,11 @@ const AdMobBanner: React.FC<AdMobBannerProps> = ({
 
         // إعداد البانر
         const options: BannerAdOptions = {
-          adId: adId || 'ca-app-pub-7990450110814740/1289194571', // معرف إختبار من Google
+          adId: adId || 'ca-app-pub-7990450110814740/1289194571', // معرف إعلان حقيقي
           adSize: size,
           position: position,
           margin: 0,
-          isTesting: false // إعلان حقيقي
+          isTesting: false // إلغاء test ads
         };
 
         // عرض البانر
