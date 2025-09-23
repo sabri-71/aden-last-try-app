@@ -1,0 +1,188 @@
+* [33m4abf80d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mapp[m[33m)[m Remove ad test buttons
+[31m|[m *   [33mc5ab375[m[33m ([m[1;31morigin/master[m[33m)[m Merge pull request #10 from sabri-71/app
+[31m|[m [32m|[m[33m\[m  
+[31m|[m [32m|[m * [33mb8b586d[m[33m ([m[1;31morigin/app[m[33m)[m Remove ad test buttons
+[31m|[m [32m|[m[31m/[m  
+[31m|[m[31m/[m[32m|[m   
+[31m|[m *   [33m8d304c1[m Merge pull request #8 from sabri-71/app
+[31m|[m [34m|[m[31m\[m  
+[31m|[m [34m|[m[31m/[m  
+[31m|[m[31m/[m[34m|[m   
+* [34m|[m [33mab5f863[m[33m ([m[1;31mupstream/app[m[33m)[m Merge remote-tracking branch 'origin/app' into app
+[35m|[m *   [33ma77388a[m Merge pull request #7 from sabri-71/app
+[35m|[m [36m|[m[35m\[m  
+[35m|[m [36m|[m[35m/[m  
+[35m|[m[35m/[m[36m|[m   
+* [36m|[m [33ma4caf6e[m Merge remote-tracking branch 'origin/app' into app
+* [36m|[m   [33m4d68d74[m Merge remote-tracking branch 'origin/app' into app
+[1;32m|[m[1;33m\[m [36m\[m  
+* [1;33m|[m [36m|[m [33md6dc9b6[m Merge remote-tracking branch 'origin/app' into app
+[1;33m|[m [1;33m|[m *   [33m00c25fa[m[33m ([m[1;31mupstream/master[m[33m)[m Merge pull request #6 from sabri-71/app
+[1;33m|[m [1;33m|[m [1;34m|[m[1;33m\[m  
+[1;33m|[m [1;33m|[m [1;34m|[m[1;33m/[m  
+[1;33m|[m [1;33m|[m[1;33m/[m[1;34m|[m   
+[1;33m|[m * [1;34m|[m [33m911251d[m Merge remote-tracking branch 'origin/app' into app
+[1;33m|[m[1;33m/[m [1;34m/[m  
+[1;33m|[m *   [33m0a88cca[m Merge pull request #5 from sabri-71/app
+[1;33m|[m [1;36m|[m[1;33m\[m  
+[1;33m|[m [1;36m|[m[1;33m/[m  
+[1;33m|[m[1;33m/[m[1;36m|[m   
+* [1;36m|[m [33m9cc6969[m Merge remote-tracking branch 'origin/app' into app
+* [1;36m|[m   [33mabbf3ad[m Merge remote-tracking branch 'origin/app' into app
+[32m|[m[33m\[m [1;36m\[m  
+[32m|[m * [1;36m\[m   [33m0d8c2ef[m Merge remote-tracking branch 'origin/app' into app
+[32m|[m [34m|[m[35m\[m [1;36m\[m  
+* [34m|[m [35m\[m [1;36m\[m   [33m746aa51[m Merge remote-tracking branch 'origin/app' into app
+[34m|[m[35m\[m [34m\[m [35m\[m [1;36m\[m  
+[34m|[m [35m|[m[34m/[m [35m/[m [1;36m/[m  
+[34m|[m[34m/[m[35m|[m [35m/[m [1;36m/[m   
+[34m|[m [35m|[m[35m/[m [1;36m/[m    
+* [35m|[m [1;36m|[m [33mef423c8[m تعديل في Index.css و Index.tsx
+[1;31m|[m [35m|[m *   [33m7d6e070[m Merge pull request #4 from sabri-71/app
+[1;31m|[m [35m|[m [1;32m|[m[35m\[m  
+[1;31m|[m [35m|[m [1;32m|[m[35m/[m  
+[1;31m|[m [35m|[m[35m/[m[1;32m|[m   
+[1;31m|[m * [1;32m|[m [33mca03706[m تعديل في Index.css و Index.tsx
+[1;31m|[m[1;31m/[m [1;32m/[m  
+* [1;32m|[m [33m24ebb98[m Merge remote-tracking branch 'github/main'
+[1;33m|[m *   [33m950015f[m Merge pull request #2 from sabri-71/app
+[1;33m|[m [1;34m|[m[1;33m\[m  
+[1;33m|[m [1;34m|[m[1;33m/[m  
+[1;33m|[m[1;33m/[m[1;34m|[m   
+[1;33m|[m [1;34m|[m *   [33mf8e5cb9[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m Merge remote-tracking branch 'origin/main'
+[1;33m|[m [1;34m|[m [1;36m|[m[31m\[m  
+[1;33m|[m [1;34m|[m [1;36m|[m *   [33m51e851b[m Merge remote-tracking branch 'origin/main'
+[1;33m|[m [1;34m|[m [1;36m|[m [32m|[m[33m\[m  
+[1;33m|[m [1;34m|[m * [32m|[m [33m\[m   [33mad002dc[m Merge remote-tracking branch 'origin/main'
+[1;33m|[m [1;34m|[m [32m|[m[33m\[m [32m\[m [33m\[m  
+[1;33m|[m [1;34m|[m [32m|[m [33m|[m[32m/[m [33m/[m  
+[1;33m|[m [1;34m|[m [32m|[m[32m/[m[33m|[m [33m/[m   
+[1;33m|[m [1;34m|[m [32m|[m [33m|[m[33m/[m    
+[1;33m|[m [1;34m|[m [32m|[m *   [33mad2c38f[m Merge remote-tracking branch 'origin/main'
+[1;33m|[m [1;34m|[m [32m|[m [36m|[m[1;31m\[m  
+[1;33m|[m [1;34m|[m * [36m|[m [1;31m\[m   [33m0d8d5b2[m Merge remote-tracking branch 'origin/main'
+[1;33m|[m [1;34m|[m [36m|[m[1;31m\[m [36m\[m [1;31m\[m  
+[1;33m|[m [1;34m|[m [36m|[m [1;31m|[m[36m/[m [1;31m/[m  
+[1;33m|[m [1;34m|[m [36m|[m[36m/[m[1;31m|[m [1;31m/[m   
+[1;33m|[m [1;34m|[m [36m|[m [1;31m|[m[1;31m/[m    
+[1;33m|[m [1;34m|[m [36m|[m * [33m9af3896[m Merge remote-tracking branch 'github/main'
+[1;33m|[m [1;34m|[m * [1;33m|[m [33mc657b88[m Merge remote-tracking branch 'github/main'
+[1;33m|[m [1;34m|[m [1;33m|[m[1;33m/[m  
+[1;33m|[m [1;34m|[m * [33mcd82072[m Merge remote-tracking branch 'github/main'
+[1;33m|[m [1;34m|[m * [33m548d0f9[m Merge remote-tracking branch 'github/main'
+[1;33m|[m [1;34m|[m * [33md05fdbe[m verson2
+[1;33m|[m [1;34m|[m[1;33m/[m  
+[1;33m|[m[1;33m/[m[1;34m|[m   
+* [1;34m|[m   [33m681615c[m Merge remote-tracking branch 'github/main'
+[1;34m|[m[1;35m\[m [1;34m\[m  
+[1;34m|[m * [1;34m\[m   [33mcc8fc50[m Merge remote-tracking branch 'github/main'
+[1;34m|[m [1;36m|[m[31m\[m [1;34m\[m  
+* [1;36m|[m [31m\[m [1;34m\[m   [33m7be5a61[m Merge remote-tracking branch 'github/main'
+[1;36m|[m[31m\[m [1;36m\[m [31m\[m [1;34m\[m  
+[1;36m|[m [31m|[m[1;36m/[m [31m/[m [1;34m/[m  
+[1;36m|[m[1;36m/[m[31m|[m [31m/[m [1;34m/[m   
+[1;36m|[m [31m|[m[31m/[m [1;34m/[m    
+[1;36m|[m * [1;34m|[m [33m7e261ed[m Merge remote-tracking branch 'origin/master'
+* [33m|[m [1;34m|[m [33mfcd80d3[m Merge remote-tracking branch 'origin/master'
+[33m|[m[33m/[m [1;34m/[m  
+* [1;34m|[m   [33mf3e1349[m Merge remote-tracking branch 'github/main'
+[34m|[m[35m\[m [1;34m\[m  
+[34m|[m * [1;34m\[m   [33mda15471[m Merge remote-tracking branch 'origin/master'
+[34m|[m [36m|[m[1;31m\[m [1;34m\[m  
+* [36m|[m [1;31m|[m [1;34m|[m [33mea898a7[m androi
+* [36m|[m [1;31m|[m [1;34m|[m   [33me76abc9[m Merge remote-tracking branch 'origin/master'
+[36m|[m[1;31m\[m [36m\[m [1;31m\[m [1;34m\[m  
+[36m|[m [1;31m|[m[36m/[m [1;31m/[m [1;34m/[m  
+[36m|[m[36m/[m[1;31m|[m [1;31m/[m [1;34m/[m   
+[36m|[m [1;31m|[m[1;31m/[m [1;34m/[m    
+[36m|[m * [1;34m|[m   [33m2f3093d[m Merge remote-tracking branch 'origin/master'
+[36m|[m [1;34m|[m[1;35m\[m [1;34m\[m  
+* [1;34m|[m [1;35m\[m [1;34m\[m   [33m6ba2efe[m Merge remote-tracking branch 'origin/master'
+[1;34m|[m[1;35m\[m [1;34m\[m [1;35m\[m [1;34m\[m  
+[1;34m|[m [1;35m|[m[1;34m/[m [1;35m/[m [1;34m/[m  
+[1;34m|[m[1;34m/[m[1;35m|[m [1;35m/[m [1;34m/[m   
+[1;34m|[m [1;35m|[m[1;35m/[m [1;34m/[m    
+[1;34m|[m * [1;34m|[m   [33mcdd821f[m Merge remote-tracking branch 'origin/master'
+[1;34m|[m [32m|[m[33m\[m [1;34m\[m  
+* [32m|[m [33m\[m [1;34m\[m   [33ma449ea5[m Merge remote-tracking branch 'origin/master'
+[32m|[m[33m\[m [32m\[m [33m\[m [1;34m\[m  
+[32m|[m [33m|[m[32m/[m [33m/[m [1;34m/[m  
+[32m|[m[32m/[m[33m|[m [33m/[m [1;34m/[m   
+[32m|[m [33m|[m[33m/[m [1;34m/[m    
+[32m|[m * [1;34m|[m   [33mf017352[m Merge remote-tracking branch 'origin/master'
+[32m|[m [36m|[m[1;31m\[m [1;34m\[m  
+* [36m|[m [1;31m\[m [1;34m\[m   [33md0d1301[m Merge remote-tracking branch 'origin/master'
+[36m|[m[1;31m\[m [36m\[m [1;31m\[m [1;34m\[m  
+[36m|[m [1;31m|[m[36m/[m [1;31m/[m [1;34m/[m  
+[36m|[m[36m/[m[1;31m|[m [1;31m/[m [1;34m/[m   
+[36m|[m [1;31m|[m[1;31m/[m [1;34m/[m    
+[36m|[m * [1;34m|[m   [33md4f9534[m Merge remote-tracking branch 'origin/master'
+[36m|[m [1;34m|[m[1;35m\[m [1;34m\[m  
+* [1;34m|[m [1;35m\[m [1;34m\[m   [33mf9cdc75[m Merge remote-tracking branch 'origin/master'
+[1;34m|[m[1;35m\[m [1;34m\[m [1;35m\[m [1;34m\[m  
+[1;34m|[m [1;35m|[m[1;34m/[m [1;35m/[m [1;34m/[m  
+[1;34m|[m[1;34m/[m[1;35m|[m [1;35m/[m [1;34m/[m   
+[1;34m|[m [1;35m|[m[1;35m/[m [1;34m/[m    
+[1;34m|[m * [1;34m|[m   [33m062ec28[m Merge remote-tracking branch 'origin/master'
+[1;34m|[m [32m|[m[33m\[m [1;34m\[m  
+* [32m|[m [33m\[m [1;34m\[m   [33m21112e8[m Merge remote-tracking branch 'origin/master'
+[32m|[m[33m\[m [32m\[m [33m\[m [1;34m\[m  
+[32m|[m [33m|[m[32m/[m [33m/[m [1;34m/[m  
+[32m|[m[32m/[m[33m|[m [33m/[m [1;34m/[m   
+[32m|[m [33m|[m[33m/[m [1;34m/[m    
+[32m|[m * [1;34m|[m   [33macfb9cc[m Merge remote-tracking branch 'origin/master'
+[32m|[m [36m|[m[1;31m\[m [1;34m\[m  
+* [36m|[m [1;31m\[m [1;34m\[m   [33mc27a857[m Merge remote-tracking branch 'origin/master'
+[36m|[m[1;31m\[m [36m\[m [1;31m\[m [1;34m\[m  
+[36m|[m [1;31m|[m[36m/[m [1;31m/[m [1;34m/[m  
+[36m|[m[36m/[m[1;31m|[m [1;31m/[m [1;34m/[m   
+[36m|[m [1;31m|[m[1;31m/[m [1;34m/[m    
+[36m|[m * [1;34m|[m   [33m007729c[m Merge remote-tracking branch 'origin/master'
+[36m|[m [1;34m|[m[1;35m\[m [1;34m\[m  
+* [1;34m|[m [1;35m\[m [1;34m\[m   [33m75d2173[m Merge remote-tracking branch 'origin/master'
+[1;34m|[m[1;35m\[m [1;34m\[m [1;35m\[m [1;34m\[m  
+[1;34m|[m [1;35m|[m[1;34m/[m [1;35m/[m [1;34m/[m  
+[1;34m|[m[1;34m/[m[1;35m|[m [1;35m/[m [1;34m/[m   
+[1;34m|[m [1;35m|[m[1;35m/[m [1;34m/[m    
+[1;34m|[m * [1;34m|[m [33me09413d[m Initial project upload
+* [31m|[m [1;34m|[m [33m01dd0df[m Initial project upload
+* [31m|[m [1;34m|[m [33mea89e07[m Initial project upload
+[31m|[m[31m/[m [1;34m/[m  
+* [1;34m/[m [33m4bc3528[m Initial project upload
+[1;34m|[m[1;34m/[m  
+*   [33mff33f19[m Merge remote-tracking branch 'origin/master'
+[32m|[m[33m\[m  
+[32m|[m *   [33m966b0fd[m Merge remote-tracking branch 'origin/master'
+[32m|[m [34m|[m[35m\[m  
+* [34m|[m [35m\[m   [33m52d6e61[m Merge remote-tracking branch 'origin/master'
+[34m|[m[35m\[m [34m\[m [35m\[m  
+[34m|[m [35m|[m[34m/[m [35m/[m  
+[34m|[m[34m/[m[35m|[m [35m/[m   
+[34m|[m [35m|[m[35m/[m    
+[34m|[m *   [33mff81952[m Merge remote-tracking branch 'origin/master'
+[34m|[m [1;32m|[m[1;33m\[m  
+* [1;32m|[m [1;33m\[m   [33m870cb25[m Merge remote-tracking branch 'origin/master'
+[1;32m|[m[1;33m\[m [1;32m\[m [1;33m\[m  
+[1;32m|[m [1;33m|[m[1;32m/[m [1;33m/[m  
+[1;32m|[m[1;32m/[m[1;33m|[m [1;33m/[m   
+[1;32m|[m [1;33m|[m[1;33m/[m    
+[1;32m|[m * [33maddfeb1[m Merge remote-tracking branch 'origin/master'
+* [1;35m|[m [33mbc87f28[m Merge remote-tracking branch 'origin/master'
+[1;35m|[m[1;35m/[m  
+* [33me76793b[m Merge remote-tracking branch 'origin/master'
+* [33m38ceff4[m Merge remote-tracking branch 'origin/master'
+*   [33mec8b7b5[m Merge remote-tracking branch 'origin/master'
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33mb8dbb95[m Merge remote-tracking branch 'origin/master'
+* [31m|[m [33mb110a90[m Merge remote-tracking branch 'origin/master'
+[31m|[m[31m/[m  
+* [33m6f31dda[m Merge remote-tracking branch 'origin/master'
+* [33m2d253b6[m Merge remote-tracking branch 'origin/master'
+*   [33m0c8771c[m Merge remote-tracking branch 'origin/master'
+[32m|[m[33m\[m  
+[32m|[m * [33m5f3b561[m Prepare backend for deployment
+* [33m|[m [33m7deeddf[m Prepare backend for deployment
+* [33m|[m [33maa82ba2[m Prepare backend for deployment
+* [33m|[m [33m1c921dd[m Prepare backend for deployment
+[33m|[m[33m/[m  
+* [33mb7d41ce[m Initial commit
